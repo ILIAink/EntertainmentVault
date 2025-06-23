@@ -2,7 +2,7 @@ import pkg from "pg";
 const { Pool } = pkg;
 import dotenv from "dotenv";
 import path from "path";
-dotenv.config({ path: path.resolve("../.env") });
+dotenv.config();
 import cors from "cors";
 import express from "express";
 import { router as movieRouter } from "./routes/movieRoutes.js";

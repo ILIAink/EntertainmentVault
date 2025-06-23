@@ -2,7 +2,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 import path from "path";
 
-dotenv.config({ path: path.resolve("../.env") });
+dotenv.config();
 const { Pool } = pg;
 
 // Create a connection pool
