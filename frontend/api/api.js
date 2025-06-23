@@ -6,7 +6,7 @@ const fetchMoviesApp = async (endpoint, method = "POST", data = null) => {
   try {
     const options = {
       method,
-      url: `http://localhost:3000/api${endpoint}`,
+      url: `http://13.219.83.107:3000/api${endpoint}`,
       ...(data && { data }),
     };
 
