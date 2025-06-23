@@ -12,7 +12,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: true, // Allow all origins
+    credentials: true, // Allow credentials
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json()); // Needed for frontend interactions
 
 // Routes
