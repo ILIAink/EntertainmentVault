@@ -19,6 +19,10 @@ app.use(express.json()); // Needed for frontend interactions
 app.use("/api/movies", movieRouter);
 app.use("/api/user", userRouter);
 
+app.use("/", (req, res) => {
+  res.send("<h1>Hello world</h1>");
+});
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
