@@ -1,17 +1,17 @@
 import express from "express";
-import { 
-    getAllMovies, 
-    createMovie, 
-    createShow,
-    createEpisode,
-    createService,
-    addToLikes, 
-    getUserMovieLikes, 
-    getUserLikes,
-    getUserServices,
-    getRandMovieFromList,
-    getRandShowFromList,
-    getTitle
+import {
+  getAllMovies,
+  createMovie,
+  createShow,
+  createEpisode,
+  createService,
+  addToLikes,
+  getUserMovieLikes,
+  getUserLikes,
+  getUserServices,
+  getRandMovieFromList,
+  getRandShowFromList,
+  getTitle,
 } from "../controllers/movieController.js";
 
 const router = express.Router();

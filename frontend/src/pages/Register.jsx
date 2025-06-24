@@ -30,7 +30,7 @@ const Register = () => {
       toast.success("Welcome to MoviesApp!");
       navigate("/");
     } catch (error) {
-      const message = error.response?.data?.error || "Registration failed";
+      const message = error.response?.data?.message || "Registration failed";
       toast.error(message);
     } finally {
       setLoading(false);
